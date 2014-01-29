@@ -1,12 +1,12 @@
 {
-    "name"        : "generic-balancer"
+  "name"        : "generic-balancer"
   , "version"     : "0.0.1"
   , "homepage"    : "http://browserswarm.com"
   , "description" : "Generic balancer"
   , "dependencies": {
-      "duplex-emitter"              : "*",
+      "duplex-emitter" : "*",
       "colors"  : "*",
-      "propagate" "*"
+      "propagate" : "*"
     }
   , "main"    : "./main.js"
 }
