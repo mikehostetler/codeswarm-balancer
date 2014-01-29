@@ -3,7 +3,7 @@ var Tester = require('./tester');
 var tester = new Tester('nodejs');
 
 tester.on('ready', function () {
-  var uptime = tester.spawn('uptime', {}, {}, 'nodejs');
+  var uptime = tester.spawn('uptime', {}, {});
 
   uptime.stdout.on('data', function (data) {
     console.log('stdout: ' + data);
