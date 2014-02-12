@@ -8,4 +8,7 @@
       "colors"  : "*"
     }
   , "main"    : "./main.js"
+  , "scripts": {
+    "start": "node ."
+  }
 }
