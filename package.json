@@ -1,15 +1,34 @@
 {
-  "name"        : "generic-balancer"
-  , "version"     : "0.0.1"
-  , "homepage"    : "http://browserswarm.com"
-  , "description" : "Generic balancer"
-  , "dependencies": {
-      "duplex-emitter" : "*",
-      "colors"  : "*"
-    }
-  , "main"    : "./main.js"
-  , "scripts": {
-    "start": "node .",
-    "forever": "forever start main.js"
+  "name": "codeswarm-balancer",
+  "version": "0.0.1",
+  "homepage": "http://codeswarm.com",
+  "description": "Worker balancer for CodeSwarm",
+  "dependencies": {
+    "duplex-emitter": "^2.1.2",
+    "colors": "^0.6.2",
+    "reconnect": "^2.0.0"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node debug index.js",
+    "forever": "forever start index.js",
+    "foreverstop": "forever stop index.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeswarm/codeswarm-balancer.git"
+  },
+  "keywords": [
+    "codeswarm"
+  ],
+  "author": "CodeSwarm <hello@codeswarm.com>",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/codeswarm/codeswarm-balancer/issues"
   }
 }
