@@ -13,12 +13,12 @@
     "start": "node index.js",
     "debug": "node debug index.js",
     "forever": "forever start index.js",
-    "foreverstop": "forever stop index.js"
+    "foreverstop": "forever stop index.js",
+		"test": "./node_modules/mocha/bin/mocha -u tdd"
   },
-  "directories": {
-    "test": "test"
+  "devDependencies": {
+    "mocha": "^1.18.2"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/codeswarm/codeswarm-balancer.git"
